@@ -1,0 +1,865 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		001CF056EFC91FA6FAB60C34 /* libPods-MoxiLjieApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5211D395DC5E3F63B248152A /* libPods-MoxiLjieApp.a */; };
+		080889F51F666A3900B98E1E /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 080889F41F666A3900B98E1E /* BaseNavigationController.m */; };
+		080889FC1F666A8A00B98E1E /* BaseTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 080889F71F666A8A00B98E1E /* BaseTabbarController.m */; };
+		080889FD1F666A8A00B98E1E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 080889F91F666A8A00B98E1E /* BaseViewController.m */; };
+		080889FE1F666A8A00B98E1E /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 080889FB1F666A8A00B98E1E /* BaseViewModel.m */; };
+		08088A021F666AC800B98E1E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08088A011F666AC800B98E1E /* Localizable.strings */; };
+		08088A041F666B0200B98E1E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08088A061F666B0200B98E1E /* InfoPlist.strings */; };
+		081BD8EC1F5CE206006C16E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 081BD8EB1F5CE206006C16E2 /* main.m */; };
+		081BD8EF1F5CE206006C16E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 081BD8EE1F5CE206006C16E2 /* AppDelegate.m */; };
+		081BD8F11F5CE206006C16E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 081BD8F01F5CE206006C16E2 /* Assets.xcassets */; };
+		081BD8F41F5CE206006C16E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081BD8F21F5CE206006C16E2 /* LaunchScreen.storyboard */; };
+		081BD8FF1F5CE206006C16E2 /* MoxiLjieAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 081BD8FE1F5CE206006C16E2 /* MoxiLjieAppTests.m */; };
+		081BD90A1F5CE206006C16E2 /* MoxiLjieAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 081BD9091F5CE206006C16E2 /* MoxiLjieAppUITests.m */; };
+		08221FC3212AA8F200F1C81C /* CountDownBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 08221FC2212AA8F200F1C81C /* CountDownBtn.m */; };
+		0835257D2092EE0700F1703E /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0835257B2092EE0700F1703E /* MeViewController.m */; };
+		0835257E2092EE0700F1703E /* MeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0835257C2092EE0700F1703E /* MeViewController.xib */; };
+		087EC07720B531E300578B5A /* DateCountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 087EC07620B531E300578B5A /* DateCountDown.m */; };
+		087FCEEE20AD278600F217BC /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 087FCEEC20AD278600F217BC /* TestViewController.m */; };
+		087FCEEF20AD278600F217BC /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 087FCEED20AD278600F217BC /* TestViewController.xib */; };
+		087FCEF120AD285500F217BC /* dong.gif in Resources */ = {isa = PBXBuildFile; fileRef = 087FCEF020AD285400F217BC /* dong.gif */; };
+		087FCEFE20AE6C2500F217BC /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 087FCEFC20AE6C2500F217BC /* TableViewCell.m */; };
+		087FCEFF20AE6C2500F217BC /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 087FCEFD20AE6C2500F217BC /* TableViewCell.xib */; };
+		0887234F20F6F41900C8BA5D /* WebManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0887234820F6F41800C8BA5D /* WebManager.m */; };
+		0887235220F6F4B100C8BA5D /* MarqueeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0887235120F6F4B100C8BA5D /* MarqueeLabel.m */; };
+		08AF07421F8CC0BE007E51ED /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08AF07401F8CC0BE007E51ED /* HomeViewController.m */; };
+		08AF07431F8CC0BE007E51ED /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08AF07411F8CC0BE007E51ED /* HomeViewController.xib */; };
+		08B32E6C206491C600B0D57C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B32E6B206491C600B0D57C /* SystemConfiguration.framework */; };
+		08B32E6E206491CE00B0D57C /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B32E6D206491CE00B0D57C /* CoreTelephony.framework */; };
+		08B32E70206491DE00B0D57C /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B32E6F206491DE00B0D57C /* libsqlite3.0.tbd */; };
+		08B32E72206491EC00B0D57C /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B32E71206491EC00B0D57C /* libstdc++.tbd */; };
+		08B32E74206491F400B0D57C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B32E73206491F400B0D57C /* libz.tbd */; };
+		08CB0BFC1F6FC2AC008D6D96 /* LJUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CB0BF91F6FC2AC008D6D96 /* LJUtil.m */; };
+		08CB0BFD1F6FC2AC008D6D96 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CB0BFB1F6FC2AC008D6D96 /* UIView+Extension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		081BD8FB1F5CE206006C16E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 081BD8DF1F5CE206006C16E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 081BD8E61F5CE206006C16E2;
+			remoteInfo = MoxiLjieApp;
+		};
+		081BD9061F5CE206006C16E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 081BD8DF1F5CE206006C16E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 081BD8E61F5CE206006C16E2;
+			remoteInfo = MoxiLjieApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		080889F31F666A3900B98E1E /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		080889F41F666A3900B98E1E /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		080889F61F666A8A00B98E1E /* BaseTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabbarController.h; sourceTree = "<group>"; };
+		080889F71F666A8A00B98E1E /* BaseTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabbarController.m; sourceTree = "<group>"; };
+		080889F81F666A8A00B98E1E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		080889F91F666A8A00B98E1E /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		080889FA1F666A8A00B98E1E /* BaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
+		080889FB1F666A8A00B98E1E /* BaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
+		08088A011F666AC800B98E1E /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		08088A031F666AFA00B98E1E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		08088A051F666B0200B98E1E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		08088A071F666B0400B98E1E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		081BD8E71F5CE206006C16E2 /* MoxiLjieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoxiLjieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		081BD8EB1F5CE206006C16E2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		081BD8ED1F5CE206006C16E2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		081BD8EE1F5CE206006C16E2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		081BD8F01F5CE206006C16E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		081BD8F31F5CE206006C16E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		081BD8F51F5CE206006C16E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		081BD8FA1F5CE206006C16E2 /* MoxiLjieAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoxiLjieAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		081BD8FE1F5CE206006C16E2 /* MoxiLjieAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoxiLjieAppTests.m; sourceTree = "<group>"; };
+		081BD9001F5CE206006C16E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		081BD9051F5CE206006C16E2 /* MoxiLjieAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoxiLjieAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		081BD9091F5CE206006C16E2 /* MoxiLjieAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoxiLjieAppUITests.m; sourceTree = "<group>"; };
+		081BD90B1F5CE206006C16E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08221FC1212AA8F200F1C81C /* CountDownBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountDownBtn.h; sourceTree = "<group>"; };
+		08221FC2212AA8F200F1C81C /* CountDownBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountDownBtn.m; sourceTree = "<group>"; };
+		0835257A2092EE0700F1703E /* MeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
+		0835257B2092EE0700F1703E /* MeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
+		0835257C2092EE0700F1703E /* MeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeViewController.xib; sourceTree = "<group>"; };
+		087EC07520B531E300578B5A /* DateCountDown.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DateCountDown.h; sourceTree = "<group>"; };
+		087EC07620B531E300578B5A /* DateCountDown.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateCountDown.m; sourceTree = "<group>"; };
+		087FCEEB20AD278600F217BC /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		087FCEEC20AD278600F217BC /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		087FCEED20AD278600F217BC /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		087FCEF020AD285400F217BC /* dong.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = dong.gif; sourceTree = "<group>"; };
+		087FCEFB20AE6C2500F217BC /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		087FCEFC20AE6C2500F217BC /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		087FCEFD20AE6C2500F217BC /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		0887233820F6F41800C8BA5D /* WebManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebManager.h; sourceTree = "<group>"; };
+		0887233920F6F41800C8BA5D /* UrlDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UrlDefine.h; sourceTree = "<group>"; };
+		0887234820F6F41800C8BA5D /* WebManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebManager.m; sourceTree = "<group>"; };
+		0887235020F6F4B100C8BA5D /* MarqueeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarqueeLabel.h; sourceTree = "<group>"; };
+		0887235120F6F4B100C8BA5D /* MarqueeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarqueeLabel.m; sourceTree = "<group>"; };
+		08AF073F1F8CC0BE007E51ED /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		08AF07401F8CC0BE007E51ED /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		08AF07411F8CC0BE007E51ED /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		08B32E6B206491C600B0D57C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		08B32E6D206491CE00B0D57C /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		08B32E6F206491DE00B0D57C /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		08B32E71206491EC00B0D57C /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		08B32E73206491F400B0D57C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		08CB0BF81F6FC2AC008D6D96 /* LJUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJUtil.h; sourceTree = "<group>"; };
+		08CB0BF91F6FC2AC008D6D96 /* LJUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJUtil.m; sourceTree = "<group>"; };
+		08CB0BFA1F6FC2AC008D6D96 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		08CB0BFB1F6FC2AC008D6D96 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		08CB0BFF1F6FC2B5008D6D96 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		08CB0C001F6FC2B5008D6D96 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		5211D395DC5E3F63B248152A /* libPods-MoxiLjieApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MoxiLjieApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F6FB35BE4C939AF883BD3F2 /* Pods-MoxiLjieApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoxiLjieApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoxiLjieApp/Pods-MoxiLjieApp.debug.xcconfig"; sourceTree = "<group>"; };
+		BCA426380525A5265A1C7FB7 /* Pods-MoxiLjieApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoxiLjieApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoxiLjieApp/Pods-MoxiLjieApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		081BD8E41F5CE206006C16E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08B32E74206491F400B0D57C /* libz.tbd in Frameworks */,
+				08B32E72206491EC00B0D57C /* libstdc++.tbd in Frameworks */,
+				08B32E70206491DE00B0D57C /* libsqlite3.0.tbd in Frameworks */,
+				08B32E6E206491CE00B0D57C /* CoreTelephony.framework in Frameworks */,
+				08B32E6C206491C600B0D57C /* SystemConfiguration.framework in Frameworks */,
+				001CF056EFC91FA6FAB60C34 /* libPods-MoxiLjieApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		081BD8F71F5CE206006C16E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		081BD9021F5CE206006C16E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080889F21F666A3900B98E1E /* 基类 */ = {
+			isa = PBXGroup;
+			children = (
+				080889F61F666A8A00B98E1E /* BaseTabbarController.h */,
+				080889F71F666A8A00B98E1E /* BaseTabbarController.m */,
+				080889F81F666A8A00B98E1E /* BaseViewController.h */,
+				080889F91F666A8A00B98E1E /* BaseViewController.m */,
+				080889FA1F666A8A00B98E1E /* BaseViewModel.h */,
+				080889FB1F666A8A00B98E1E /* BaseViewModel.m */,
+				080889F31F666A3900B98E1E /* BaseNavigationController.h */,
+				080889F41F666A3900B98E1E /* BaseNavigationController.m */,
+			);
+			path = "基类";
+			sourceTree = "<group>";
+		};
+		081BD8DE1F5CE206006C16E2 = {
+			isa = PBXGroup;
+			children = (
+				081BD8E91F5CE206006C16E2 /* MoxiLjieApp */,
+				081BD8FD1F5CE206006C16E2 /* MoxiLjieAppTests */,
+				081BD9081F5CE206006C16E2 /* MoxiLjieAppUITests */,
+				081BD8E81F5CE206006C16E2 /* Products */,
+				C11264547657344C8DAD7EA5 /* Pods */,
+				B8B3DA6FE9B1FE00AA1072F6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		081BD8E81F5CE206006C16E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				081BD8E71F5CE206006C16E2 /* MoxiLjieApp.app */,
+				081BD8FA1F5CE206006C16E2 /* MoxiLjieAppTests.xctest */,
+				081BD9051F5CE206006C16E2 /* MoxiLjieAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		081BD8E91F5CE206006C16E2 /* MoxiLjieApp */ = {
+			isa = PBXGroup;
+			children = (
+				080889F21F666A3900B98E1E /* 基类 */,
+				0887233720F6F41800C8BA5D /* 网络 */,
+				087FCEF020AD285400F217BC /* dong.gif */,
+				081BD8ED1F5CE206006C16E2 /* AppDelegate.h */,
+				081BD8EE1F5CE206006C16E2 /* AppDelegate.m */,
+				0887235020F6F4B100C8BA5D /* MarqueeLabel.h */,
+				0887235120F6F4B100C8BA5D /* MarqueeLabel.m */,
+				08CB0C011F6FC2CA008D6D96 /* Class */,
+				08CB0BF71F6FC2AC008D6D96 /* 工具 */,
+				08CB0BFE1F6FC2B5008D6D96 /* Other */,
+				081BD8F21F5CE206006C16E2 /* LaunchScreen.storyboard */,
+				081BD8F01F5CE206006C16E2 /* Assets.xcassets */,
+				081BD8F51F5CE206006C16E2 /* Info.plist */,
+				081BD8EA1F5CE206006C16E2 /* Supporting Files */,
+				08088A061F666B0200B98E1E /* InfoPlist.strings */,
+				08088A011F666AC800B98E1E /* Localizable.strings */,
+			);
+			path = MoxiLjieApp;
+			sourceTree = "<group>";
+		};
+		081BD8EA1F5CE206006C16E2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				081BD8EB1F5CE206006C16E2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		081BD8FD1F5CE206006C16E2 /* MoxiLjieAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				081BD8FE1F5CE206006C16E2 /* MoxiLjieAppTests.m */,
+				081BD9001F5CE206006C16E2 /* Info.plist */,
+			);
+			path = MoxiLjieAppTests;
+			sourceTree = "<group>";
+		};
+		081BD9081F5CE206006C16E2 /* MoxiLjieAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				081BD9091F5CE206006C16E2 /* MoxiLjieAppUITests.m */,
+				081BD90B1F5CE206006C16E2 /* Info.plist */,
+			);
+			path = MoxiLjieAppUITests;
+			sourceTree = "<group>";
+		};
+		0887233720F6F41800C8BA5D /* 网络 */ = {
+			isa = PBXGroup;
+			children = (
+				0887233A20F6F41800C8BA5D /* model */,
+				0887233920F6F41800C8BA5D /* UrlDefine.h */,
+				0887233820F6F41800C8BA5D /* WebManager.h */,
+				0887234820F6F41800C8BA5D /* WebManager.m */,
+			);
+			path = "网络";
+			sourceTree = "<group>";
+		};
+		0887233A20F6F41800C8BA5D /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		08AF073B1F8CB02E007E51ED /* model */ = {
+			isa = PBXGroup;
+			children = (
+				087EC07520B531E300578B5A /* DateCountDown.h */,
+				087EC07620B531E300578B5A /* DateCountDown.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		08AF073C1F8CB02E007E51ED /* vc */ = {
+			isa = PBXGroup;
+			children = (
+				08AF073F1F8CC0BE007E51ED /* HomeViewController.h */,
+				08AF07401F8CC0BE007E51ED /* HomeViewController.m */,
+				08AF07411F8CC0BE007E51ED /* HomeViewController.xib */,
+				0835257A2092EE0700F1703E /* MeViewController.h */,
+				0835257B2092EE0700F1703E /* MeViewController.m */,
+				0835257C2092EE0700F1703E /* MeViewController.xib */,
+				087FCEEB20AD278600F217BC /* TestViewController.h */,
+				087FCEEC20AD278600F217BC /* TestViewController.m */,
+				087FCEED20AD278600F217BC /* TestViewController.xib */,
+				087FCEFB20AE6C2500F217BC /* TableViewCell.h */,
+				087FCEFC20AE6C2500F217BC /* TableViewCell.m */,
+				087FCEFD20AE6C2500F217BC /* TableViewCell.xib */,
+			);
+			path = vc;
+			sourceTree = "<group>";
+		};
+		08AF073D1F8CB02E007E51ED /* view */ = {
+			isa = PBXGroup;
+			children = (
+				08221FC1212AA8F200F1C81C /* CountDownBtn.h */,
+				08221FC2212AA8F200F1C81C /* CountDownBtn.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		08AF073E1F8CB02E007E51ED /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		08CB0BF71F6FC2AC008D6D96 /* 工具 */ = {
+			isa = PBXGroup;
+			children = (
+				08CB0BF81F6FC2AC008D6D96 /* LJUtil.h */,
+				08CB0BF91F6FC2AC008D6D96 /* LJUtil.m */,
+				08CB0BFA1F6FC2AC008D6D96 /* UIView+Extension.h */,
+				08CB0BFB1F6FC2AC008D6D96 /* UIView+Extension.m */,
+			);
+			path = "工具";
+			sourceTree = "<group>";
+		};
+		08CB0BFE1F6FC2B5008D6D96 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				08CB0BFF1F6FC2B5008D6D96 /* Header.h */,
+				08CB0C001F6FC2B5008D6D96 /* PrefixHeader.pch */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		08CB0C011F6FC2CA008D6D96 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				08AF073C1F8CB02E007E51ED /* vc */,
+				08AF073B1F8CB02E007E51ED /* model */,
+				08AF073D1F8CB02E007E51ED /* view */,
+				08AF073E1F8CB02E007E51ED /* viewmodel */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		B8B3DA6FE9B1FE00AA1072F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08B32E73206491F400B0D57C /* libz.tbd */,
+				08B32E71206491EC00B0D57C /* libstdc++.tbd */,
+				08B32E6F206491DE00B0D57C /* libsqlite3.0.tbd */,
+				08B32E6D206491CE00B0D57C /* CoreTelephony.framework */,
+				08B32E6B206491C600B0D57C /* SystemConfiguration.framework */,
+				5211D395DC5E3F63B248152A /* libPods-MoxiLjieApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C11264547657344C8DAD7EA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F6FB35BE4C939AF883BD3F2 /* Pods-MoxiLjieApp.debug.xcconfig */,
+				BCA426380525A5265A1C7FB7 /* Pods-MoxiLjieApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		081BD8E61F5CE206006C16E2 /* MoxiLjieApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 081BD90E1F5CE206006C16E2 /* Build configuration list for PBXNativeTarget "MoxiLjieApp" */;
+			buildPhases = (
+				A1E991E1B479D053C7B9DDB7 /* [CP] Check Pods Manifest.lock */,
+				081BD8E31F5CE206006C16E2 /* Sources */,
+				081BD8E41F5CE206006C16E2 /* Frameworks */,
+				081BD8E51F5CE206006C16E2 /* Resources */,
+				31F1E55894258E3D844FA921 /* [CP] Embed Pods Frameworks */,
+				EC25B29D9E6095FDFFA65392 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoxiLjieApp;
+			productName = MoxiLjieApp;
+			productReference = 081BD8E71F5CE206006C16E2 /* MoxiLjieApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		081BD8F91F5CE206006C16E2 /* MoxiLjieAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 081BD9111F5CE206006C16E2 /* Build configuration list for PBXNativeTarget "MoxiLjieAppTests" */;
+			buildPhases = (
+				081BD8F61F5CE206006C16E2 /* Sources */,
+				081BD8F71F5CE206006C16E2 /* Frameworks */,
+				081BD8F81F5CE206006C16E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				081BD8FC1F5CE206006C16E2 /* PBXTargetDependency */,
+			);
+			name = MoxiLjieAppTests;
+			productName = MoxiLjieAppTests;
+			productReference = 081BD8FA1F5CE206006C16E2 /* MoxiLjieAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		081BD9041F5CE206006C16E2 /* MoxiLjieAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 081BD9141F5CE206006C16E2 /* Build configuration list for PBXNativeTarget "MoxiLjieAppUITests" */;
+			buildPhases = (
+				081BD9011F5CE206006C16E2 /* Sources */,
+				081BD9021F5CE206006C16E2 /* Frameworks */,
+				081BD9031F5CE206006C16E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				081BD9071F5CE206006C16E2 /* PBXTargetDependency */,
+			);
+			name = MoxiLjieAppUITests;
+			productName = MoxiLjieAppUITests;
+			productReference = 081BD9051F5CE206006C16E2 /* MoxiLjieAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		081BD8DF1F5CE206006C16E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = AppleFish;
+				TargetAttributes = {
+					081BD8E61F5CE206006C16E2 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 46SHPCVLTF;
+						ProvisioningStyle = Automatic;
+					};
+					081BD8F91F5CE206006C16E2 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 46SHPCVLTF;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 081BD8E61F5CE206006C16E2;
+					};
+					081BD9041F5CE206006C16E2 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 46SHPCVLTF;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 081BD8E61F5CE206006C16E2;
+					};
+				};
+			};
+			buildConfigurationList = 081BD8E21F5CE206006C16E2 /* Build configuration list for PBXProject "MoxiLjieApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 081BD8DE1F5CE206006C16E2;
+			productRefGroup = 081BD8E81F5CE206006C16E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				081BD8E61F5CE206006C16E2 /* MoxiLjieApp */,
+				081BD8F91F5CE206006C16E2 /* MoxiLjieAppTests */,
+				081BD9041F5CE206006C16E2 /* MoxiLjieAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		081BD8E51F5CE206006C16E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0835257E2092EE0700F1703E /* MeViewController.xib in Resources */,
+				087FCEFF20AE6C2500F217BC /* TableViewCell.xib in Resources */,
+				081BD8F11F5CE206006C16E2 /* Assets.xcassets in Resources */,
+				08088A021F666AC800B98E1E /* Localizable.strings in Resources */,
+				08AF07431F8CC0BE007E51ED /* HomeViewController.xib in Resources */,
+				087FCEF120AD285500F217BC /* dong.gif in Resources */,
+				08088A041F666B0200B98E1E /* InfoPlist.strings in Resources */,
+				087FCEEF20AD278600F217BC /* TestViewController.xib in Resources */,
+				081BD8F41F5CE206006C16E2 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		081BD8F81F5CE206006C16E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		081BD9031F5CE206006C16E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31F1E55894258E3D844FA921 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoxiLjieApp/Pods-MoxiLjieApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1E991E1B479D053C7B9DDB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoxiLjieApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC25B29D9E6095FDFFA65392 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MoxiLjieApp/Pods-MoxiLjieApp-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoxiLjieApp/Pods-MoxiLjieApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		081BD8E31F5CE206006C16E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08CB0BFD1F6FC2AC008D6D96 /* UIView+Extension.m in Sources */,
+				080889F51F666A3900B98E1E /* BaseNavigationController.m in Sources */,
+				080889FE1F666A8A00B98E1E /* BaseViewModel.m in Sources */,
+				087EC07720B531E300578B5A /* DateCountDown.m in Sources */,
+				08AF07421F8CC0BE007E51ED /* HomeViewController.m in Sources */,
+				0887235220F6F4B100C8BA5D /* MarqueeLabel.m in Sources */,
+				0835257D2092EE0700F1703E /* MeViewController.m in Sources */,
+				0887234F20F6F41900C8BA5D /* WebManager.m in Sources */,
+				087FCEFE20AE6C2500F217BC /* TableViewCell.m in Sources */,
+				087FCEEE20AD278600F217BC /* TestViewController.m in Sources */,
+				080889FD1F666A8A00B98E1E /* BaseViewController.m in Sources */,
+				081BD8EF1F5CE206006C16E2 /* AppDelegate.m in Sources */,
+				080889FC1F666A8A00B98E1E /* BaseTabbarController.m in Sources */,
+				081BD8EC1F5CE206006C16E2 /* main.m in Sources */,
+				08221FC3212AA8F200F1C81C /* CountDownBtn.m in Sources */,
+				08CB0BFC1F6FC2AC008D6D96 /* LJUtil.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		081BD8F61F5CE206006C16E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				081BD8FF1F5CE206006C16E2 /* MoxiLjieAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		081BD9011F5CE206006C16E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				081BD90A1F5CE206006C16E2 /* MoxiLjieAppUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		081BD8FC1F5CE206006C16E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 081BD8E61F5CE206006C16E2 /* MoxiLjieApp */;
+			targetProxy = 081BD8FB1F5CE206006C16E2 /* PBXContainerItemProxy */;
+		};
+		081BD9071F5CE206006C16E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 081BD8E61F5CE206006C16E2 /* MoxiLjieApp */;
+			targetProxy = 081BD9061F5CE206006C16E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		08088A061F666B0200B98E1E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08088A051F666B0200B98E1E /* zh-Hans */,
+				08088A071F666B0400B98E1E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		081BD8F21F5CE206006C16E2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				081BD8F31F5CE206006C16E2 /* Base */,
+				08088A031F666AFA00B98E1E /* zh-Hans */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		081BD90C1F5CE206006C16E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		081BD90D1F5CE206006C16E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		081BD90F1F5CE206006C16E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F6FB35BE4C939AF883BD3F2 /* Pods-MoxiLjieApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 46SHPCVLTF;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MoxiLjieApp/Other/PrefixHeader.pch";
+				INFOPLIST_FILE = MoxiLjieApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MoxiLjieApp/WechatSDK1.8.2",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ljie.MoxiLjieApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		081BD9101F5CE206006C16E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCA426380525A5265A1C7FB7 /* Pods-MoxiLjieApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 46SHPCVLTF;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MoxiLjieApp/Other/PrefixHeader.pch";
+				INFOPLIST_FILE = MoxiLjieApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MoxiLjieApp/WechatSDK1.8.2",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ljie.MoxiLjieApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		081BD9121F5CE206006C16E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 46SHPCVLTF;
+				INFOPLIST_FILE = MoxiLjieAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ljie.MoxiLjieAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoxiLjieApp.app/MoxiLjieApp";
+			};
+			name = Debug;
+		};
+		081BD9131F5CE206006C16E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 46SHPCVLTF;
+				INFOPLIST_FILE = MoxiLjieAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ljie.MoxiLjieAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoxiLjieApp.app/MoxiLjieApp";
+			};
+			name = Release;
+		};
+		081BD9151F5CE206006C16E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 46SHPCVLTF;
+				INFOPLIST_FILE = MoxiLjieAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ljie.MoxiLjieAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MoxiLjieApp;
+			};
+			name = Debug;
+		};
+		081BD9161F5CE206006C16E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 46SHPCVLTF;
+				INFOPLIST_FILE = MoxiLjieAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ljie.MoxiLjieAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MoxiLjieApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		081BD8E21F5CE206006C16E2 /* Build configuration list for PBXProject "MoxiLjieApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				081BD90C1F5CE206006C16E2 /* Debug */,
+				081BD90D1F5CE206006C16E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		081BD90E1F5CE206006C16E2 /* Build configuration list for PBXNativeTarget "MoxiLjieApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				081BD90F1F5CE206006C16E2 /* Debug */,
+				081BD9101F5CE206006C16E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		081BD9111F5CE206006C16E2 /* Build configuration list for PBXNativeTarget "MoxiLjieAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				081BD9121F5CE206006C16E2 /* Debug */,
+				081BD9131F5CE206006C16E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		081BD9141F5CE206006C16E2 /* Build configuration list for PBXNativeTarget "MoxiLjieAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				081BD9151F5CE206006C16E2 /* Debug */,
+				081BD9161F5CE206006C16E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 081BD8DF1F5CE206006C16E2 /* Project object */;
+}
